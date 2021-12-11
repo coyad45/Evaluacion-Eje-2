@@ -95,7 +95,17 @@ namespace FrmPrincipal
 
         public void dtgvPaciente_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            foreach (DataGridViewRow fila in dtgvPaciente.Rows)
+            {
 
+                if (fila.Selected)
+                {
+
+                    EliminarSeleccion.Enabled = true;
+                }
+
+            }
+            
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -107,6 +117,37 @@ namespace FrmPrincipal
             ingresoMedico.ShowDialog();
 
             this.Close();
+        }
+
+        private void EliminarSeleccion_Click(object sender, EventArgs e)
+        {                             
+           foreach (DataGridViewRow fila in dtgvPaciente.Rows)
+            {
+                
+                if (fila.Selected)
+                {
+                    
+                    dtgvPaciente.Rows.Remove(dtgvPaciente.CurrentRow);
+                }
+
+           }
+           
+            
+
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+             foreach (DataGridViewRow fila in dataGridView1.Rows)
+            {
+
+                if (fila.Selected)
+                {
+                    dataGridView1.Rows.Remove(dataGridView1.CurrentRow);
+                    
+                }
+            }
         }
     }
 }

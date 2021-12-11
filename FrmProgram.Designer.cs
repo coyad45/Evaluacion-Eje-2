@@ -57,6 +57,8 @@ namespace FrmPrincipal
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.EliminarSeleccion = new System.Windows.Forms.Button();
+            this.EliminarSeleccion2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvPaciente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -75,7 +77,7 @@ namespace FrmPrincipal
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(35, 462);
+            this.button4.Location = new System.Drawing.Point(35, 391);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(187, 42);
             this.button4.TabIndex = 4;
@@ -85,7 +87,7 @@ namespace FrmPrincipal
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(35, 654);
+            this.button5.Location = new System.Drawing.Point(35, 631);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(187, 42);
             this.button5.TabIndex = 5;
@@ -96,7 +98,7 @@ namespace FrmPrincipal
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(35, 510);
+            this.button6.Location = new System.Drawing.Point(35, 439);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(187, 42);
             this.button6.TabIndex = 6;
@@ -106,7 +108,7 @@ namespace FrmPrincipal
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(35, 318);
+            this.button7.Location = new System.Drawing.Point(35, 247);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(187, 42);
             this.button7.TabIndex = 7;
@@ -118,7 +120,7 @@ namespace FrmPrincipal
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(35, 366);
+            this.button9.Location = new System.Drawing.Point(35, 295);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(187, 42);
             this.button9.TabIndex = 9;
@@ -164,7 +166,7 @@ namespace FrmPrincipal
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dtgvPaciente.Location = new System.Drawing.Point(283, 318);
+            this.dtgvPaciente.Location = new System.Drawing.Point(283, 295);
             this.dtgvPaciente.Name = "dtgvPaciente";
             this.dtgvPaciente.ReadOnly = true;
             this.dtgvPaciente.RowTemplate.Height = 25;
@@ -225,7 +227,7 @@ namespace FrmPrincipal
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
-            this.dataGridView1.Location = new System.Drawing.Point(283, 558);
+            this.dataGridView1.Location = new System.Drawing.Point(283, 535);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 25;
@@ -237,36 +239,42 @@ namespace FrmPrincipal
             // 
             this.dataGridViewTextBoxColumn1.HeaderText = "Nombre";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Width = 165;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.HeaderText = "Apellido";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             this.dataGridViewTextBoxColumn2.Width = 165;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.HeaderText = "Dni";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             this.dataGridViewTextBoxColumn3.Width = 165;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.HeaderText = "Edad";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             this.dataGridViewTextBoxColumn4.Width = 165;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.HeaderText = "Obra Social";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             this.dataGridViewTextBoxColumn5.Width = 165;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.HeaderText = "Numero de Paciente";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
             this.dataGridViewTextBoxColumn6.Width = 165;
             // 
             // textBox4
@@ -274,7 +282,7 @@ namespace FrmPrincipal
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox4.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.textBox4.Location = new System.Drawing.Point(283, 295);
+            this.textBox4.Location = new System.Drawing.Point(283, 272);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(527, 17);
             this.textBox4.TabIndex = 18;
@@ -285,7 +293,7 @@ namespace FrmPrincipal
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.textBox2.Location = new System.Drawing.Point(283, 535);
+            this.textBox2.Location = new System.Drawing.Point(283, 512);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(527, 17);
             this.textBox2.TabIndex = 19;
@@ -295,7 +303,7 @@ namespace FrmPrincipal
             // 
             this.textBox5.BackColor = System.Drawing.SystemColors.Highlight;
             this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(283, 266);
+            this.textBox5.Location = new System.Drawing.Point(283, 243);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(1033, 23);
             this.textBox5.TabIndex = 20;
@@ -304,7 +312,7 @@ namespace FrmPrincipal
             // 
             this.textBox6.BackColor = System.Drawing.SystemColors.Highlight;
             this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(283, 481);
+            this.textBox6.Location = new System.Drawing.Point(283, 483);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(1033, 23);
             this.textBox6.TabIndex = 21;
@@ -312,12 +320,35 @@ namespace FrmPrincipal
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(35, 414);
+            this.button1.Location = new System.Drawing.Point(35, 343);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(187, 42);
             this.button1.TabIndex = 22;
             this.button1.Text = "Asignar Medico";
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // EliminarSeleccion
+            // 
+            this.EliminarSeleccion.BackColor = System.Drawing.Color.White;
+            this.EliminarSeleccion.Enabled = false;
+            this.EliminarSeleccion.Location = new System.Drawing.Point(1129, 435);
+            this.EliminarSeleccion.Name = "EliminarSeleccion";
+            this.EliminarSeleccion.Size = new System.Drawing.Size(187, 42);
+            this.EliminarSeleccion.TabIndex = 23;
+            this.EliminarSeleccion.Text = "Eliminar Seleccion";
+            this.EliminarSeleccion.UseVisualStyleBackColor = false;
+            this.EliminarSeleccion.Click += new System.EventHandler(this.EliminarSeleccion_Click);
+            // 
+            // EliminarSeleccion2
+            // 
+            this.EliminarSeleccion2.BackColor = System.Drawing.Color.White;
+            this.EliminarSeleccion2.Location = new System.Drawing.Point(1129, 679);
+            this.EliminarSeleccion2.Name = "EliminarSeleccion2";
+            this.EliminarSeleccion2.Size = new System.Drawing.Size(187, 42);
+            this.EliminarSeleccion2.TabIndex = 24;
+            this.EliminarSeleccion2.Text = "Eliminar Seleccion";
+            this.EliminarSeleccion2.UseVisualStyleBackColor = false;
+            this.EliminarSeleccion2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // FrmProgram
             // 
@@ -325,6 +356,8 @@ namespace FrmPrincipal
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1352, 791);
+            this.Controls.Add(this.EliminarSeleccion2);
+            this.Controls.Add(this.EliminarSeleccion);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
@@ -385,5 +418,7 @@ namespace FrmPrincipal
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button EliminarSeleccion;
+        private System.Windows.Forms.Button EliminarSeleccion2;
     }
 }
