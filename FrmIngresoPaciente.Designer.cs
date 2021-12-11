@@ -223,35 +223,41 @@ namespace FrmPrincipal
             this.Apellido.HeaderText = "Apellido";
             this.Apellido.MaxInputLength = 10;
             this.Apellido.Name = "Apellido";
+            this.Apellido.ReadOnly = true;
             // 
             // Nombre
             // 
             this.Nombre.HeaderText = "Nombre";
             this.Nombre.MaxInputLength = 10;
             this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
             // 
             // Dni
             // 
             this.Dni.HeaderText = "Dni";
             this.Dni.MaxInputLength = 8;
             this.Dni.Name = "Dni";
+            this.Dni.ReadOnly = true;
             // 
             // Edad
             // 
             this.Edad.HeaderText = "Edad";
             this.Edad.MaxInputLength = 2;
             this.Edad.Name = "Edad";
+            this.Edad.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.HeaderText = "Obra Social";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "N° Paciente";
             this.Column1.MaxInputLength = 2;
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // NumeroPaciente
             // 

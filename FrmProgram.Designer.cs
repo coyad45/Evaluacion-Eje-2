@@ -330,7 +330,6 @@ namespace FrmPrincipal
             // EliminarSeleccion
             // 
             this.EliminarSeleccion.BackColor = System.Drawing.Color.White;
-            this.EliminarSeleccion.Enabled = false;
             this.EliminarSeleccion.Location = new System.Drawing.Point(1129, 435);
             this.EliminarSeleccion.Name = "EliminarSeleccion";
             this.EliminarSeleccion.Size = new System.Drawing.Size(187, 42);
