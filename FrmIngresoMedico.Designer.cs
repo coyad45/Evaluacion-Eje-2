@@ -295,6 +295,7 @@ namespace FrmPrincipal
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmIngresoMedico";
             this.Text = "FrmIngresoMedico";
+            this.Load += new System.EventHandler(this.FrmIngresoMedico_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

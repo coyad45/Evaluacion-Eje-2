@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BibliotecaDeClasesHospital;
+using BibliotecaDeClasesClinica;
+using static BibliotecaDeClasesClinica.Clinica;
 
 namespace FrmPrincipal
 {
@@ -93,6 +94,11 @@ namespace FrmPrincipal
         }
 
         private void button3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmIngresoPaciente_Load(object sender, EventArgs e)
         {
 
         }

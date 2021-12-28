@@ -308,6 +308,7 @@ namespace FrmPrincipal
             this.Name = "FrmIngresoPaciente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmIngresoPaciente";
+            this.Load += new System.EventHandler(this.FrmIngresoPaciente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

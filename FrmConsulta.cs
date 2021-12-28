@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FrmPrincipal
 {
-    public partial class FrmAsignacionMedico : Form
+    public partial class Consulta : Form
     {
-        public FrmAsignacionMedico()
+        public Consulta()
         {
             InitializeComponent();
         }

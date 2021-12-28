@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BibliotecaDeClasesHospital;
+using static BibliotecaDeClasesClinica.Clinica;
 
 namespace FrmPrincipal
 {
@@ -67,6 +67,11 @@ namespace FrmPrincipal
             EdadMedico.Text = "";
             EspecialidadMedico.Text = "";
             DisponibilidadMedico.Text = "";
+
+        }
+
+        private void FrmIngresoMedico_Load(object sender, EventArgs e)
+        {
 
         }
     }
