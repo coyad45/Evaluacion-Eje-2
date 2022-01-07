@@ -1,0 +1,12 @@
+C:\Users\coyad\source\repos\BibliotecaDeClasesClinica\bin\Debug\net5.0\BibliotecaDeClasesClinica.deps.json
+C:\Users\coyad\source\repos\BibliotecaDeClasesClinica\bin\Debug\net5.0\BibliotecaDeClasesClinica.dll
+C:\Users\coyad\source\repos\BibliotecaDeClasesClinica\bin\Debug\net5.0\ref\BibliotecaDeClasesClinica.dll
+C:\Users\coyad\source\repos\BibliotecaDeClasesClinica\bin\Debug\net5.0\BibliotecaDeClasesClinica.pdb
+C:\Users\coyad\source\repos\BibliotecaDeClasesClinica\obj\Debug\net5.0\BibliotecaDeClasesClinica.csproj.AssemblyReference.cache
+C:\Users\coyad\source\repos\BibliotecaDeClasesClinica\obj\Debug\net5.0\BibliotecaDeClasesClinica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\coyad\source\repos\BibliotecaDeClasesClinica\obj\Debug\net5.0\BibliotecaDeClasesClinica.AssemblyInfoInputs.cache
+C:\Users\coyad\source\repos\BibliotecaDeClasesClinica\obj\Debug\net5.0\BibliotecaDeClasesClinica.AssemblyInfo.cs
+C:\Users\coyad\source\repos\BibliotecaDeClasesClinica\obj\Debug\net5.0\BibliotecaDeClasesClinica.csproj.CoreCompileInputs.cache
+C:\Users\coyad\source\repos\BibliotecaDeClasesClinica\obj\Debug\net5.0\BibliotecaDeClasesClinica.dll
+C:\Users\coyad\source\repos\BibliotecaDeClasesClinica\obj\Debug\net5.0\ref\BibliotecaDeClasesClinica.dll
+C:\Users\coyad\source\repos\BibliotecaDeClasesClinica\obj\Debug\net5.0\BibliotecaDeClasesClinica.pdb
