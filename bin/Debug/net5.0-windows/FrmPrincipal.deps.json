@@ -8,8 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "FrmPrincipal/1.0.0": {
         "dependencies": {
-          "BibliotecaDeClasesClinica": "1.0.0",
-          "BibliotecaDeClasesHospital": "1.0.0"
+          "BibliotecaDeClasesClinica": "1.0.0"
         },
         "runtime": {
           "FrmPrincipal.dll": {}

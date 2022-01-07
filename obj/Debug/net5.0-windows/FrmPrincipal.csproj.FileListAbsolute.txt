@@ -21,6 +21,6 @@ C:\Users\coyad\source\repos\EvaluacionEje2\obj\Debug\net5.0-windows\FrmPrincipal
 C:\Users\coyad\source\repos\EvaluacionEje2\obj\Debug\net5.0-windows\FrmPrincipal.FrmIngresoPaciente.resources
 C:\Users\coyad\source\repos\EvaluacionEje2\obj\Debug\net5.0-windows\FrmPrincipal.csproj.CopyComplete
 C:\Users\coyad\source\repos\EvaluacionEje2\obj\Debug\net5.0-windows\FrmPrincipal.FrmIngresoMedico.resources
-C:\Users\coyad\source\repos\EvaluacionEje2\obj\Debug\net5.0-windows\FrmPrincipal.FrmAsignacionMedico.resources
 C:\Users\coyad\source\repos\EvaluacionEje2\bin\Debug\net5.0-windows\BibliotecaDeClasesClinica.dll
 C:\Users\coyad\source\repos\EvaluacionEje2\bin\Debug\net5.0-windows\BibliotecaDeClasesClinica.pdb
+C:\Users\coyad\source\repos\EvaluacionEje2\obj\Debug\net5.0-windows\FrmPrincipal.FrmConsulta.resources

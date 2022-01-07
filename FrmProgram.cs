@@ -14,6 +14,7 @@ namespace FrmPrincipal
 {
     public partial class FrmProgram : Form
     {
+        //listas creadas para el almacenamiento de los datos del ingreso de medicos y pacientes
         public static List<Persona> listaPersona = new List<Persona>();
 
         public static List<Medico> listaMedico = new List<Medico>()
@@ -40,12 +41,15 @@ namespace FrmPrincipal
 
         public void button5_Click(object sender, EventArgs e)
         {
+            //Cierra el programa y lo finaliza
             this.Hide();
             this.Close();
         }
 
         public void button7_Click(object sender, EventArgs e)
         {
+
+            //Muestra el formulario de registro de pacientes
             this.Hide();
 
 
@@ -78,7 +82,8 @@ namespace FrmPrincipal
 
         public void FrmProgram_Load(object sender, EventArgs e)
         {
-            foreach(var Persona in listaPersona)
+            //Agrega los valores a las datagriend correspondientes sea paciente o medico      
+            foreach (var Persona in listaPersona)
             {
                 dtgvPaciente.Rows.Add(Persona.Apellido, Persona.Nombre, Persona.Dni , Persona.Edad, Persona.ObraSocial, Persona.NumeroDePaciente);
             }
@@ -110,6 +115,7 @@ namespace FrmPrincipal
 
         private void button9_Click(object sender, EventArgs e)
         {
+            //Muestra el formulario de registro de Medicos
             this.Hide();
 
 
@@ -120,7 +126,9 @@ namespace FrmPrincipal
         }
 
         private void EliminarSeleccion_Click(object sender, EventArgs e)
-        {                             
+        {                        
+           
+           //Remueve la seleccion de la lista seleccionada en este caso paciente        
            foreach (DataGridViewRow fila in dtgvPaciente.Rows)
             {
                 
@@ -139,7 +147,8 @@ namespace FrmPrincipal
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-             foreach (DataGridViewRow fila in dataGridView1.Rows)
+            //Remueve la seleccion de la lista seleccionada en este caso medico
+            foreach (DataGridViewRow fila in dataGridView1.Rows)
             {
 
                 if (fila.Selected)
@@ -148,6 +157,33 @@ namespace FrmPrincipal
                     
                 }
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Muestra el formulario de consulta medica y pasa los datos del paciente seleccionado
+            
+            this.Hide();
+
+           
+            FrmConsulta consulta = new FrmConsulta();
+  
+                    foreach (var Persona in listaPersona)
+                    {
+
+                        consulta.comboBox1.Items.Add(Persona.Apellido);
+                        consulta.apellidoConsulta.Text = Persona.Nombre;
+                        
+
+                    }
+                    
+
+           
+
+
+
+            consulta.ShowDialog();
+            this.Close();
         }
     }
 }

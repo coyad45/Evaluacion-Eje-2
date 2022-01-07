@@ -32,8 +32,7 @@ namespace FrmPrincipal
             foreach (DataGridViewRow fila in dataGridView1.Rows)
             {
                 Persona per = new Persona();
-                if (fila.Selected)
-                {
+                
                     per.Nombre = fila.Cells[0].Value.ToString();
                     per.Apellido = fila.Cells[1].Value.ToString();
                     per.Dni = fila.Cells[2].Value.ToString();
@@ -42,7 +41,7 @@ namespace FrmPrincipal
                     per.NumeroDePaciente = fila.Cells[5].Value.ToString();
 
                     FrmProgram.listaPersona.Add(per);
-                }
+                
             }
             
             form2.ShowDialog();
@@ -99,6 +98,11 @@ namespace FrmPrincipal
         }
 
         private void FrmIngresoPaciente_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ObraSocialPaciente_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

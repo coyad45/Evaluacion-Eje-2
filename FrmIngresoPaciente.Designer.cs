@@ -278,6 +278,7 @@ namespace FrmPrincipal
             this.ObraSocialPaciente.Name = "ObraSocialPaciente";
             this.ObraSocialPaciente.Size = new System.Drawing.Size(229, 23);
             this.ObraSocialPaciente.TabIndex = 17;
+            this.ObraSocialPaciente.SelectedIndexChanged += new System.EventHandler(this.ObraSocialPaciente_SelectedIndexChanged);
             // 
             // FrmIngresoPaciente
             // 
